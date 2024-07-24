@@ -18,7 +18,9 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
 const app = express();
 
 // middleware configuration..
+
 // app.use(cors());
+
 app.use(cors({
     origin: 'https://instantshopkaroclient.onrender.com', // Replace with your client URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
